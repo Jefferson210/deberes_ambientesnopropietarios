@@ -1,0 +1,136 @@
+h1 {
+	position: absolute;
+	top: 225px;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	font-size: 40px;
+}
+
+h2 {
+	position: absolute;
+	top: 300px;
+	left: 280px;
+	width: 60%;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+
+#cabecera {
+	background: #fff;
+	width:100%; /* Establecemos que el ancho sera del 100% */
+	overflow:hidden; /* Eliminamos errores de float */
+	}
+
+
+#logo {
+	float: left;
+	padding: 0px;
+	color: #fff;
+	width: 100px;
+	height: 80px;
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+#navegacion {
+	float: left;
+	color: #fff;
+	width: 600px;
+	margin-left: 200px;
+	margin-top: 25px;
+}
+
+#search{
+	float: left;
+	color: #fff;
+	width: 300px;
+	margin: 5px;
+	margin-left: 0px;
+	margin-top: 25px;
+	}
+
+
+#menu {
+ padding: 0px;
+ float: right;
+}
+
+#menu li{
+	display: inline;
+	text-align: right;
+	padding-right: 50px;
+}
+
+#menu li a {
+font-family: Arial;
+font-size:15px;
+text-decoration: none;
+float:left;
+padding: 10px;
+background-color: #fff;
+color: #000000;
+text-align: right;
+}
+
+#menu li a:hover {
+background-color: #F48B3A;
+margin-top:-2px;
+padding-bottom:12px;
+}
+
+#slider {
+	height: 500px;
+    overflow: hidden;
+    text-align: center;
+    width: cover;
+}
+
+#slider .learn {
+  padding: 8px 20px;
+  background: #FFB24B;
+  color: #FFFFFF;
+  border-radius: 4px;
+  margin-top: 300px;
+  display: inline-block;
+}
+
+
+#services {
+	height: 400px;
+    overflow: hidden;
+    text-align: center;
+    width: cover;
+    background-color: #fff;
+}
+
+#services .our{
+  margin-top: 350px;
+  padding: 8px 20px;
+  background: #708BFF;
+  color: #FFFFFF;
+  border-radius: 4px;
+  width: 120px;
+  font-size: 15px;
+  display: inline;
+}
+
+table {
+	margin-top: 80px;
+	width: 1100px;
+	
+}
+
+td {
+	text-align: center;
+	width: 30px;
+	height: auto;
+}
+
+#portfolio {
+	height: 500px;
+    overflow: hidden;
+    text-align: center;
+    width: cover;
+}
