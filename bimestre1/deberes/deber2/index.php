@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Números primos</title>
+			<link rel="stylesheet" type="text/css" href="css/primos.css">
+		</head>
+	<body>
+		<?php
+			function generar_tabla(){
+				echo "<center>";
+				echo "<table border='1'>";	
+				echo "<tr>" ;
+				echo "<td id='head' colspan='10'>TABLA 100 PRIMEROS NÚMEROS NATURALES<br><p id='texto_rojo'>NÚMEROS PRIMOS EN ROJO </p></td>";
+				echo "</tr>" ;
+				$i=0;
+				while ($i < 100) {
+				echo "<tr>";
+				for ($j=0; $j<10 ; $j++) { 
+					echo "<td>";
+						if(es_primo($i))
+							{
+								echo "<p id='primo'>$i</p>";
+								$i++;
+							}
+							else
+							{
+								echo "<p> $i</p>";
+								$i++;
+							}
+					echo "</td>";
+					}
+				echo "</tr>";
+				}
+				echo "</table>";
+				echo "</center>";
+			}
+
+			function es_primo($num){			
+				$cont=0;
+				if ($num >1) {
+					for ($i=2; $i<=$num ; $i++) { 
+						if ($num%$i==0) {
+							$cont++;
+							}	
+						}
+						if ($cont<=1) {
+							return true;
+						}
+						return false;
+				}
+						else
+						return false;
+			}
+		?>
+
+
+		<?php
+			generar_tabla();
+		?>
+	</body>
+</html>
