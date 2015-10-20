@@ -1,0 +1,135 @@
+#header {
+	background: #090909;
+	color: white;
+	height: 60px;
+	margin-bottom: 0px;
+}	
+
+#pagina_prueba {
+	width: auto;
+	height: auto;
+	background-color: #090909;
+	float: left;
+	margin-top: 20px;
+	margin-left: 180px;
+
+}
+
+#pagina_prueba a  {
+	color: #FFFFFF;
+	font-family: "Lucida Sans Unicode";
+	font-size: 17px;
+
+
+}
+
+
+#login {
+	width: 500px;
+	height: 40px;
+	background-color: #090909;
+	float: right;
+	margin-top: 5px;
+	margin-right: 180px;
+}
+
+#login input{
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 5px;
+	border:1px solid;
+	border-radius: 3px;
+	font-size: 15px;
+	padding-left: 8px;
+
+}
+
+#ingresar{
+	background-color: #4AB957;
+	color: #FFFFFF;
+	width: 80px;
+	cursor: pointer;
+}
+
+#ingresar:hover{
+	background-color: #44A34F;	
+}
+
+#cuerpo {
+	background-color: #E7DEDE;
+	font-family: "Lucida Sans Unicode";
+	margin-top: 0px;
+	}
+
+#titulo1 {
+	margin-top: 0px;
+	text-align: left;
+	font-size: 48px;
+	
+	}
+
+#articulo {
+
+	background-color: #E7DEDE;
+	width: 1000px;
+	height:450px;
+}
+
+#parrafo {
+	text-align: left;
+} 
+
+#learn_more {
+	height: 35px;
+	margin-top: 10px;
+	margin-left: 5px;
+	border:1px solid;
+	border-radius: 3px;
+	font-size: 15px;
+	padding-left: 8px;
+	background-color: #4455FD;
+	float: left;
+	color: #FFFFFF;
+	border-color:  #4455FD;
+}
+
+#learn_more:hover{
+	background-color: #2B39EF;
+}
+
+#footer {
+	background-color: #FFFFFF;
+	width: 1000px;
+	height:450px;
+}
+
+.footer {
+	background-color: #FFFFFF;
+	width: 305px;
+	height: 300px;
+	float: left;
+	margin-right: 28px;
+	margin-top: 40px;
+	text-align: left;
+	font-family: "Lucida Sans Unicode";
+	font-size: 15px;
+}
+
+.details {
+	height: 25px;
+	margin-top: 10px;
+	margin-left: 5px;
+	border:1px solid;
+	border-radius: 3px;
+	font-size: 15px;
+	padding-left: 8px;
+	background-color: #FFFFFF;
+	float: left;
+	color: ##000000;
+	border-color:  #000000;
+	font-family: "Lucida Sans Unicode";
+}
+
+.details:hover {
+	background-color: #F0EEEE;
+}
