@@ -1,0 +1,65 @@
+#div_general {
+	width: 900px;
+	height: 200px;
+	border:1px solid;
+}
+
+h2 {
+	padding-left: 230px;
+	padding-top: 50px;
+	color: #193EB5;
+}
+
+label {
+	font-size: 20px;
+}
+
+#valor {
+	float: left;
+	padding-left: 100px;
+	padding-top: 50px;
+}
+
+#convertir_a{
+	float: left;
+	padding-left: 100px;
+	padding-top: 50px;
+
+}
+
+input, select{
+	border:2px solid;
+}
+
+#boton {
+	float: left;
+	padding-top: 80px;
+	padding-left: 400px;
+	font-size: 25px;
+	width: auto;
+	height: auto;
+}
+
+#boton input {
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 5px;
+	border:1px solid;
+	border-radius: 3px;
+	font-size: 20px;
+}
+
+#boton input:hover {
+	background-color: #868484;
+}
+
+#respuesta {
+	width: 900px;
+	height: 200px;
+	border:1px solid;
+}
+
+#require {
+	padding-top: 90px;
+	font-size: 20px;
+}
