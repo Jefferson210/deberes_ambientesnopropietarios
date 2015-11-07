@@ -1,0 +1,27 @@
+#primo {
+	color: #F70E0E;		
+}
+
+table {
+	border-collapse: collapse;
+	width: 50%;
+	text-align: center;
+	height: 300px;
+	font-weight: bold;
+	border-color: #000;
+	font-size: 16px;
+}
+td {
+	padding: 0px;
+}
+
+#head {
+	background-color: #FCBFA7;
+	font-weight: bold;
+	padding: 5px;
+	font-size: 20px;
+}
+
+#texto_rojo {
+	color: #F70E0E;	
+}
