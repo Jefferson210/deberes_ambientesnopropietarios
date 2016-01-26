@@ -1,0 +1,43 @@
+#form-registro {
+	margin: 50px auto;
+	width: 320px;
+    margin-top: 0px;
+}
+
+#nombre,#telefono{
+	width: 48%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 15px;
+}
+#telefono{
+	margin-left: 12px;
+}
+
+
+.error{
+    background-color: #BC1010;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+}
+.error:before{ /* Este es un truco para crear una flechita */
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #BC1010;
+    border-left: 8px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}
+
+/*TOOLTIPS*/
+
+.tooltip-inner{
+    background: #FD2626;
+}
