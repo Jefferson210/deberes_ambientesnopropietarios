@@ -38,6 +38,7 @@
           </div>
           <div class="form-group">
             <input type="submit" class="btn btn-primary btn-lg" id="btn-cancelar" value="Cancelar">
+            <input type="submit" class="btn btn-primary btn-lg" id="iniciar_sesion" value="Iniciar Sesion">
           </div>
         </form>
       </div>

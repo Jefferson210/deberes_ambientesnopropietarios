@@ -23,7 +23,7 @@ session_start();
 
 // Definimos las constantes que nos pueden ser útiles en todo el sitio.
 //define('DOCUMENT_ROOT_RELATIVA', '/anp/sesiones/sesion7/s7/sesionesN/');
-define('DOCUMENT_ROOT_RELATIVA', '/examen/');
+define('DOCUMENT_ROOT_RELATIVA', '/ambientes/examen2/');
 define('DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT']);
 
 // incluimos las utilidades

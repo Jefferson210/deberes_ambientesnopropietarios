@@ -1,8 +1,8 @@
 <?php
 	$result="";
 	if($_POST){
-	  $email = $_POST['sesion_email'];
-	  $contrasenia = md5($_POST['sesion_contrasenia']);
+	  $email = $_POST['email'];
+	  $contrasenia = md5($_POST['contrasenia']);
 
 		// verificamos que el estudiante exista en la BDD
 		$conexion =new mysqli('localhost','root','','examen2');
@@ -22,15 +22,15 @@
 					// Si las contrasenas coinciden podemos iniciar sesion
 						$_SESSION['email'] = $email;
 						if(isset( $_SESSION['email'] )) {
-							 http_redirect('matriculacion.php');
+							 //http_redirect('matriculacion.php');
+							$result='true';
 						}
 				}	
 				else{
-					//echo '<h2>Usuario o Contraseña Incorrecto</h2>';
-					echo '<div class="aler alert-danger"><h3>Usuario o Contraseña Incorrecto</h3></div>';
+					$result= "Usuario o Contraseña Incorrecto";
 				}	
 			}
 	}
-	$msg = (isset($_GET['exito']) ? $_GET['exito'] : '');
-	//echo json_encode($result); 
+	//$msg = (isset($_GET['exito']) ? $_GET['exito'] : '');
+	echo json_encode($result); 
 ?>

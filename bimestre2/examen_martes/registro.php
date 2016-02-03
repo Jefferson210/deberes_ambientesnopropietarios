@@ -1,4 +1,3 @@
-<?php include('php/verificarUsuarios.php'); ?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -6,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Inicio Sesión</title>
+    <title>Registro Estudiantes</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,19 +16,28 @@
       <div id="mensaje" class="alert"></div>
       <div id="error" class="alert"></div>
       <div id="form-registro">
-        <form role="form" id="inicioSesion" action="" method="POST">
-          <h2>Inicia sesión para matricularte</h2>
+        <form role="form" id="registro">
+          <h2>Registrate para poder matricularte</h2>
           <div class="form-group">
-            <input type="email" name="sesion_email" class="form-control" id="sesion_email" placeholder="Email">
+            <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombres">
+          </div>
+          <div class="form-group">
+            <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Apellidos">
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" id="email" placeholder="Email">
           </div>      
           <div class="form-group">
-            <input type="password" name="sesion_contrasenia" class="form-control" id="sesion_contrasenia" placeholder="Contraseña">
+            <input type="password" name="contrasenia" class="form-control" id="contrasenia" placeholder="Contraseña">
           </div>
           <div class="form-group">
-            <input type="submit" class="btn btn-primary btn-lg" id="btn-sesion" value="Iniciar Sesión">
+            <input type="password" name="rep_password" class="form-control" id="rep_password" placeholder="Verificar Contraseña">
           </div>
           <div class="form-group">
-            <a id="link_registrarme" href="registro.php">Registrarme</a>
+            <input type="submit" class="btn btn-primary btn-lg" id="btn-registrar" value="Registrarme">
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary btn-lg" id="btn-cancelar" value="Cancelar">
           </div>
         </form>
       </div>

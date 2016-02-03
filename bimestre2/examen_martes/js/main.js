@@ -124,19 +124,11 @@ $(document).ready(function(){
 	$("#btn-cancelar").on("click",function(e){
 		e.preventDefault();
 		$('#registro').trigger("reset");
-		location.href="index.php";
-
-	});
-
-	$("#iniciar_sesion").on("click",function(e){
-		e.preventDefault();
-		$('#registro').trigger("reset");
-		location.href="index.php";
 
 	});
 
 	//ENVIAR DATOS VALIDADOS DE INICIO DE SESION
-		/*$("#btn-sesion").on("click",function(e){
+		$("#btn-sesion").on("click",function(e){
 		e.preventDefault();
 		if($("form#inicioSesion").valid()){
 			$.ajax({
@@ -153,7 +145,7 @@ $(document).ready(function(){
 		      else
 		      location.href="matriculacion.php"
 		      	
-		        //$('#mensaje').addClass('alert-danger'); //llevarme al archivo matriculacion.php en lugar de esto
+		        //$('#mensaje').addClass('alert-danger'); //llevarme al archivo matriculacion.php en lugar de esto*/
 
 		      $('#mensaje').html(msg);
 		      console.log("success");
@@ -166,62 +158,11 @@ $(document).ready(function(){
 				console.log("complete");
 			});			
 		}
-	});*/
-
-	//CARGAR MATERIAS
-	$('#txtnivel').on('change', function(event) {
-	  event.preventDefault();
-	  
-	  $.ajax({
-	    url: 'php/get_materias.php',
-	    type: 'post',
-	    data: {
-	    		nivel: $('#txtnivel').val()
-	    	},
-	  })
-	  .done(function(msg) {
-	  	$('#materias thead tr span').html($('#txtnivel option:selected').html());
-	    $('#materias tbody tr').html(msg);
-	    console.log("success");
-	  })
-	  .fail(function() {
-	    console.log("error");
-	  })
-	  .always(function() {
-	    console.log("complete");
-	  }); 
 	});
 
-	//REGISTRAR MATERIAS		
-	$('#reg_materias').on("click",function(e){
-		e.preventDefault();
-		var mats=[];
-		$("input[type=checkbox]").each(function(){
-			if (this.checked) {
-                mats.push ($(this).attr('value'));
+	
 
-            }
-		});
-		alert(mats);
-		
-		$.ajax({
-			url: 'php/registrarMaterias.php',
-			type: 'post',
-			dataType: 'json',
-			data: {
-				arrayMaterias: mats
-			},
-		})
-		.done(function() {
-			console.log("success");
-		})
-		.fail(function() {
-			console.log("error");
-		})
-		.always(function() {
-			console.log("complete");
-		});
-		
-	});
+	
+	
 
 });//fin document ready

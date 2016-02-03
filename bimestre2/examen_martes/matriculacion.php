@@ -1,4 +1,3 @@
-<?php include('php/verificarUsuarios.php'); ?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -15,24 +14,8 @@
   <body>
     <div class="container">
       <div id="mensaje" class="alert"></div>
-      <div id="error" class="alert"></div>
-      <div id="form-registro">
-        <form role="form" id="inicioSesion" action="" method="POST">
-          <h2>Inicia sesión para matricularte</h2>
-          <div class="form-group">
-            <input type="email" name="sesion_email" class="form-control" id="sesion_email" placeholder="Email">
-          </div>      
-          <div class="form-group">
-            <input type="password" name="sesion_contrasenia" class="form-control" id="sesion_contrasenia" placeholder="Contraseña">
-          </div>
-          <div class="form-group">
-            <input type="submit" class="btn btn-primary btn-lg" id="btn-sesion" value="Iniciar Sesión">
-          </div>
-          <div class="form-group">
-            <a id="link_registrarme" href="registro.php">Registrarme</a>
-          </div>
-        </form>
-      </div>
+      
+      <h1>Hola</h1>
     </div>
     
     
